@@ -32,7 +32,9 @@ C) O código avalia a expressão booleana, imprime `true` e, em seguida, verific
 
 D) O código avalia a expressão booleana, imprime `false` e ordena os valores em ordem crescente.
 
-
+RESPOSTA:
+Alternativa "A".
+Justificativa: 
 ______
 
 **2)** O código a seguir contém duas funções que calculam o limite de crédito de um cliente com base nos seus gastos e na renda mensal.
@@ -228,6 +230,32 @@ Pedidos entre R$50,00 e R$199,99 (inclusive) → "Frete com custo adicional!"
 Pedidos de R$200,00 ou mais → "Frete grátis!"
 ```
 Implemente um pseudocódigo que receba o valor total da compra e exiba a classificação correta do frete para o cliente.
+
+RESPOSTA
+```javascript
+
+class Sistema {
+
+       // Método que verifica o valor e retorna uma mensagem sobre o frete
+    info(valor){ 
+        if (valor < 50) { 
+            return "Frete não disponível"; 
+        } else if (valor < 199.99) { 
+            return "Frete com custo adicional"; 
+        } else {  
+            return "Frete grátis!";
+        }
+    }
+}
+
+const meuSistema = new Sistema(); // Criando uma instância da classe
+
+// Chamando o método info e exibindo no console
+console.log(meuSistema.info(30));
+console.log(meuSistema.info(100));  
+console.log(meuSistema.info(210));     
+
+```
 ______
 
 **8)** Considere a implementação da classe base Veiculo em um sistema de modelagem de veículos. Sua tarefa é implementar, utilizando pseudocódigo, as classes derivadas Carro e Moto, que herdam da classe Veiculo, adicionando atributos específicos e métodos para calcular o consumo de combustível de um carro e de uma moto, respectivamente.
@@ -245,6 +273,52 @@ Método CalcularConsumo():
 ```
 Implementação genérica para cálculo de consumo, a ser sobrescrita pelas subclasses.
 Agora, implemente as classes Carro e Moto, garantindo que ambas herdem de Veiculo e possuam métodos específicos para calcular o consumo de combustível com base na quilometragem e eficiência do veículo.
+
+
+RESPOSTA
+```javascript
+
+class Veiculo {
+
+    constructor (modelo, ano,){
+        this.modelo = modelo;
+        this.ano = ano;
+    }
+
+    calcularConsumo(){}
+}
+
+class Carro extends Veiculo {
+    constructor (modelo,ano,quilometragem,eficiencia){
+        super(modelo,ano);
+        this.quilometragem = quilometragem;
+        this.eficiencia = eficiencia;
+    }
+
+    calcularConsumo(){  
+        return this.quilometragem / this.eficiencia     
+    }
+}
+
+class Moto extends Veiculo {
+    constructor (modelo,ano,quilometragem,eficiencia){
+        super(modelo,ano);
+        this.quilometragem = quilometragem;
+        this.eficiencia = eficiencia;
+    }
+
+    calcularConsumo(){  
+        return this.quilometragem / this.eficiencia     
+    }
+}
+
+let carro1 = new Carro("Corolla", 2023, 500, 12);
+let moto1 = new Moto("Fazer25", 2022, 300, 25);
+
+console.log("Consumo do Carro:", carro1.calcularConsumo());
+console.log("Consumo da Moto:", moto1.calcularConsumo());
+
+```
 ______
 
 **9)** Você é um cientista da NASA e está ajudando no desenvolvimento de um sistema de pouso para sondas espaciais em Marte. Seu objetivo é calcular o tempo necessário para que a sonda reduza sua velocidade até um nível seguro para pouso, considerando uma velocidade inicial de entrada na atmosfera marciana e uma taxa de desaceleração constante causada pelo atrito atmosférico e retrofoguetes.
