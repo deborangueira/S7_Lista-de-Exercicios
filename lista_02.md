@@ -32,9 +32,7 @@ C) O código avalia a expressão booleana, imprime `true` e, em seguida, verific
 
 D) O código avalia a expressão booleana, imprime `false` e ordena os valores em ordem crescente.
 
-RESPOSTA:
-Alternativa "A".
-Justificativa: 
+RESPOSTA: Alternativa "A". 
 ______
 
 **2)** O código a seguir contém duas funções que calculam o limite de crédito de um cliente com base nos seus gastos e na renda mensal.
@@ -95,6 +93,8 @@ B) analisarCredito1() exibirá: 'Seu crédito foi negado. Saldo disponível: -60
 C) analisarCredito1() exibirá: 'Seu crédito foi negado. Saldo disponível: -200.', enquanto analisarCredito2() exibirá: 'Seu crédito foi aprovado. Saldo disponível: 100.'
 
 D) Ambas as funções exibirão: 'Seu crédito foi aprovado Saldo disponível: 500.'
+
+RESPOSTA: Alternativa "A". 
 ______
 
 **3)** Considere o seguinte trecho de código em JavaScript:
@@ -119,6 +119,8 @@ B) O código verifica se a idade pertence à faixa adulta. Se for, exibe "Você 
 C) O código verifica se a idade está entre 18 e 60 anos e, se for, imprime "Você é um adulto!". Se não estiver nesse intervalo, imprime "Você está na melhor idade!".
 
 D) O código verifica se a idade é menor de 18, entre 18 e 60 ou acima de 60, imprimindo uma mensagem específica para cada caso.
+
+RESPOSTA: Alternativa "B". 
 ______
 
 **4)** Qual será o resultado impresso no console após a execução do seguinte código?
@@ -188,6 +190,7 @@ Dispositivo 4 não pode ser ligado. Energia insuficiente.
 
 Dispositivo 5 não pode ser ligado. Energia insuficiente.
 
+RESPOSTA: Alternativa "D". 
 ______
 
 **5)** Qual é a principal função do método update() em um jogo desenvolvido com Phaser.js?
@@ -201,6 +204,8 @@ B) O método update() é chamado continuamente a cada quadro (frame) do jogo, se
 C) O método update() renderiza todos os sprites na tela e garante que a física do jogo seja processada corretamente.
 
 D) O método update() é chamado apenas uma vez após a criação da cena, sendo utilizado para configurar variáveis iniciais do jogo.
+
+RESPOSTA: Alternativa "B". 
 ______
 
 **6)** Qual é o principal objetivo do módulo Matter.js Physics em Phaser.js?
@@ -215,6 +220,7 @@ C) Renderizar gráficos otimizados para jogos 2D e garantir uma taxa de quadros 
 
 D) Criar animações automáticas para sprites e objetos interativos sem necessidade de programação de movimentação.
 
+RESPOSTA: Alternativa "A". 
 ______
 
 # Questões dissertativas
