@@ -281,7 +281,7 @@ Implementação genérica para cálculo de consumo, a ser sobrescrita pelas subc
 Agora, implemente as classes Carro e Moto, garantindo que ambas herdem de Veiculo e possuam métodos específicos para calcular o consumo de combustível com base na quilometragem e eficiência do veículo.
 
 
-RESPOSTA
+**RESPOSTA**
 ```javascript
 
 class Veiculo {
